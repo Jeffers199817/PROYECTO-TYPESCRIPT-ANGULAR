@@ -1,4 +1,5 @@
 import './style.css';
+// import './topics/1-basic-types';
 
 const app = document.querySelector<HTMLDivElement>('#app')!;
 
