@@ -13,6 +13,7 @@ const shoppingCart: Product[] = [
     },
     {
         descripcion: 'iPhone',
+        
         price: 234.2
     }
 ];
