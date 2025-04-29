@@ -13,25 +13,27 @@
 
 export class Person{
 
-    constructor(public name: string, public addres: string = 'pifo') {
+    constructor(public name: string, public addres: string = 'pifo', public logros:number=0) {
         
     }
 }
 
 
-export class Hero extends Person{
+export class Hero {
+
+  //  public person: Person;
 
     constructor(
         public alterEgo: string,
         public age: number,
         public realName: string,
-
+        public person: Person
     ) {
-        super(realName, 'puembo');
+       /* this.person = new Person('Jefferson', 'Puembo1');*/
     }
-
 }
-
-    const ironman = new Hero('Jefferson',4, 'Puembo');
+    
+    const tony = new Person('Jefferson', 'Puembo', 43)
+    const ironman = new Hero('Super Heroe',44, 'Alquinga', tony);
 
     console.log(ironman);
